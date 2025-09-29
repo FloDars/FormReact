@@ -19,7 +19,7 @@ const concat = (a,b) => [...a,...b];
  * - ne pas utiliser la méthode push
  */
 
-const push = null;
+const push = (a,b) => a.type(b);
 
 /**
  * utiliser l'opérateur de composition ... afin de fusionner 2 objets passés en paramètres
