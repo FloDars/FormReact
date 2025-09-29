@@ -37,7 +37,7 @@ const merge = (a, b) => ({...a, ...b});
  *  - interdiction d'utiliser l'opérateur d'affectation "="
  */
 
-const setName = (a, b) => ({b,...a, ...b});
+const setName = (a, name) => ({...a, name});
 
 // astuce: {...obj} crée une copie de l'objet, c'est un des principes de l'immutabilité et évite les problèmes de référence
 module.exports = {concat, push, merge, setName}
