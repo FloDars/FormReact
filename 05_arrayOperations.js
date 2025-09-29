@@ -59,7 +59,12 @@ const sum = [365, 850];
  *   - Vous ne pouvez pas utiliser de variable (autre que l'argument de la fonction)
   */
 
-const findUserById = null;
+const findUserById = [{id: 1, name: 'John'},
+    {id: 2, name: 'Doe'},
+    {id: 3, name: 'Foo'},
+    {id: 4, name: 'Bar'}];
+
+findUserById.find(i=>i.name === "Foo");
 
 
 module.exports = {multiplyByTwo, filterNameStartByA, sum, findUserById};
