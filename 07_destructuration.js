@@ -7,12 +7,12 @@
  * 
  * astuce: vous pouvez utiliser la décomposition directement dans les arguments de la fonction
  * 
- * contrainte: 
+ * contrainte:
  *  - interdiction d'utiliser [0] et [1]
  *  - interdiction d'utiliser slice ou splice
  */
 
-const extractFirstTwo = null;
+const extractFirstTwo = ([a,b]) => [a,b];
 
 /**
  * utilisez la décomposition pour extraire la premiere case du tableau et le reste du tableau
@@ -21,7 +21,7 @@ const extractFirstTwo = null;
  * exemple: [1, 2, 3] => [2, 3]
  */
 
-const extractRest = null;
+const extractRest = ([a, ...rest]) => rest;
 
 /**
  * utilisez la décomposition pour extraire le champ "name" de l'objet passé en paramètre
@@ -35,7 +35,7 @@ const extractRest = null;
  * - interdiction d'utiliser l'opérateur "." pour accéder au champ "name"
  */
 
-const extractName = null;
+const extractName =  ({name}) => name;
 
 /**
  * utilisez la décomposition pour retourner l'objet utilisateur sans le champ "password"
@@ -48,6 +48,6 @@ const extractName = null;
  * 
  */
 
-const removePassword = null;
+const removePassword = ({password, ...rest}) => rest;
 
 module.exports = {extractFirstTwo, extractRest, extractName, removePassword}
