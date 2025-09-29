@@ -11,3 +11,4 @@
 
 const concat = (a,b) => (`${a} ${b}`);
 console.log(concat("John", "Doe"));
+module.exports = {concat};
