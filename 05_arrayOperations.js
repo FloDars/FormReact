@@ -10,7 +10,8 @@
  * 
   */
 
-const multiplyByTwo = null;
+const multiplyByTwo = [1,2];
+    multiplyByTwo.map(i => i * 2);
 
 
 /**
@@ -23,7 +24,8 @@ const multiplyByTwo = null;
  *   - Vous ne pouvez pas utiliser de variable (autre que l'argument de la fonction)
   */
 
-const filterNameStartByA = null;
+const filterNameStartByA = ["Arn", "Damien"];
+    filterNameStartByA.filter(i => i.startsWith("A"));
 
 /**
  * Utiliser la fonction .reduce sur le tableau passé en paramètre
@@ -35,7 +37,8 @@ const filterNameStartByA = null;
  *   - Vous ne pouvez pas utiliser de variable (autre que l'argument de la fonction)
   */
 
-const sum = null;
+const sum = [365, 850];
+    sum.reduce();
 
 /**
  * Utiliser la fonction .find sur le tableau passé en paramètre
