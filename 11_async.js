@@ -51,7 +51,7 @@ const axios = require("axios");
 
 const apiResponse = async (url) => {
     const res = await axios.get(url);
-    console.log(res.data)
+    // console.log(res.data)
     return res.data;
 };
 apiResponse("http://jsonplaceholder.typicode.com/todos/1")
