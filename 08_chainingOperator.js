@@ -16,6 +16,11 @@
  * 
  */
 
-const getGroupName = null;
-
+const getGroupName = (name, ...group) => group.find(i=> i.name === name)?.name;
+console.log(getGroupName({
+    name: "John",
+    group: {
+        name: "admin"
+    }
+}));
 module.exports = {getGroupName};
